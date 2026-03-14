@@ -1,0 +1,177 @@
+.Explore {
+  background-color: #030303;
+  padding-top: 75px;
+}
+
+.before-after {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  z-index: 1;
+  height: 700px;
+  margin-bottom: 75px;
+}
+
+.before {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/img/explore-slider/before.jpg");
+  background-size: cover;
+}
+
+.after {
+  max-width: 100%;
+  width: 38.9%;
+  height: 100%;
+  background-image: url("../assets/img/explore-slider/after.jpg");
+  background-position-x: right;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+}
+
+.devider {
+  cursor: e-resize;
+  position: absolute;
+  left: 58.5%;
+  z-index: 1000;
+  height: 100%;
+}
+
+
+/* .devider {
+  cursor: e-resize;
+  position: absolute;
+  z-index: 2;
+  left: 440px
+} */
+
+.flex-container {
+  display: flex;
+  column-gap: 60px;
+}
+
+.header-black h2 {
+  color: #ffffff;
+}
+
+.header-black hr {
+  max-width: 660px;
+  margin-bottom: 75px;
+}
+
+.paragraph {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38.5px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.wrapper-block1 {
+  width: 100%;
+  max-width: 660px;
+}
+
+/* #710707 */
+
+@media screen and (max-width: 1024px) {
+  .Explore {
+    padding-top: 60px;
+  }
+  .wrapper-block1 {
+    max-width: 100%;
+  }
+
+  .section-header {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .header-black hr {
+    margin-bottom: 60px;
+    max-width: 100%;
+  }
+  .wrapper-block1 .paragraph:nth-of-type(3) {
+    display: none;
+  }
+  .flex-container {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  .paragraph {
+    padding-bottom: 0;
+    font-size: 20px;
+  }
+
+  .before-after {
+    align-self: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Explore {
+    padding-top: 40px;
+  }
+  .wrapper-block1 {
+    max-width: 100%;
+  }
+
+  .section-header {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .header-black hr {
+    margin-bottom: 0;
+  }
+  .wrapper-block1 .paragraph {
+    display: none;
+  }
+  .flex-container {
+    row-gap: 40px;
+  }
+
+  .before-after {
+    margin-bottom: 40px;
+  }
+  .devider {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .wrapper-block1 {
+    max-width: 100%;
+  }
+
+  .section-header {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  .header-black hr {
+    margin-bottom: 0;
+  }
+  .wrapper-block1 .paragraph {
+    display: none;
+  }
+
+  .before-after {
+    height: 368px;
+  }
+
+}

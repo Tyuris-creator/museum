@@ -1,0 +1,143 @@
+.header {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
+
+.header__wrapper {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 49px;
+  height: 26px;
+}
+
+.logo__header {
+  display: flex;
+  width: 199px;
+  justify-content: space-between;
+}
+
+.header__name {
+  font-family: "Forum-Regular";
+  letter-spacing: 5px;
+  cursor:default ;
+}
+
+.header__name {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  line-height: 100%;
+  width: 775px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--main-white);
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-family: "Roboto";
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #9D8665;
+}
+
+a:active {
+  color: #7E6C51;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 32px;
+  height: 18px;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 8px 0 #ffffff;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger.close::before {
+  top: 8px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(255, 255, 255, 0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger.close::after {
+  bottom: 8px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+
+@media screen and (max-width:1024px) {
+  .nav {
+    display: none;
+   
+  }
+  .burger {
+    display: block;
+  }
+  .header__wrapper {
+    height: 130px;
+  }
+}
+
+
+@media screen and (max-width:768px){
+  .header__wrapper {
+    height: 110px;
+  }
+
+}
+
+
+@media screen and (max-width:420px){
+  .header__wrapper {
+    height: 90px;
+  }
+  .logo__header {
+    width: 131px;
+  }
+  .logo {
+    width: 29px;
+    height: 16px;
+  }
+  .header__name {
+    font-size: 18px;
+  }
+
+
+}
+
+

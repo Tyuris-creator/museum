@@ -1,0 +1,185 @@
+.Visiting {
+  background-color: var(--main-white);
+  padding-top: 75px;
+}
+
+.section-header {
+  font-family: "Forum-Regular";
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  color: #9d8665;
+}
+
+.section-header hr {
+  margin-top: 25px;
+  height: 3px;
+  background-color: #710707;
+}
+
+.visiting-grid-table {
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(440px, 440px));
+  grid-auto-flow: row;
+  justify-content: center;
+  column-gap: 60px;
+  row-gap: 75px;
+  padding: 75px 0 75px 0;
+  justify-content: center;
+}
+
+.visiting__header {
+  font-family: "Forum-Regular";
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+
+
+.grid-element hr {
+  height: 2px;
+  background-color: #710707;
+  width: 300px;
+  margin: 10px 0 10px 0;
+  transition: width 0.3s;
+}
+
+.grid-element .virtualTour {
+  font-family: "Roboto";
+  font-size: 22px;
+  padding-bottom: 10px;
+  font-weight: 200;
+}
+
+.grid-element:hover hr {
+  width: 440px;
+}
+
+.grid-element .PanoramaView {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 200;
+  color: #000000;
+}
+
+.grid-element .PanoramaView:hover {
+  color: #9d8665;
+}
+
+.grid-element .PanoramaView:active {
+  color: #7e6c51;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-header {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .Visiting {
+    padding-top: 60px;
+  }
+  .section-header hr {
+    margin-top: 20px;
+  }
+  .visiting-grid-table {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
+    row-gap: 60px;
+    padding: 60px 0 60px 0;
+    column-gap: 108px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .grid-element {
+   width: 100%;
+    max-width: 330px;
+  }
+  .grid-element hr {
+    width: 150px;
+  }
+  .grid-element:hover hr {
+    width: 100%;
+  }
+  .grid-element img {
+    min-width: 250px;
+    max-width: 330px;
+  }
+  .visiting__header {
+    font-size: 28px;
+  }
+  .grid-element .virtualTour {
+    font-size: 20px;
+  }
+  .grid-element .PanoramaView {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-header {
+    font-weight: 400;
+    font-size: 40px;
+
+    line-height: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .Visiting {
+    padding-top: 40px;
+  }
+  .visiting-grid-table {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    row-gap: 40px;
+    padding: 40px 0 80px 0;
+    column-gap: 56px;
+  }
+  .grid-element {
+    width: fit-content;
+  }
+  .grid-element img {
+    min-width: 100px;
+    max-width: 280px;
+  }
+  .visiting__header {
+    font-size: 22px;
+  }
+  .grid-element .virtualTour {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .section-header {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .visiting-grid-table {
+    row-gap: 40px;
+    padding: 40px 0 40px 0;
+    column-gap: 56px;
+  }
+  .grid-element {
+    width: 280px;
+  }
+  .grid-element img {
+    max-width: 280px;
+  }
+  .visiting__header {
+    font-size: 22px;
+  }
+  .grid-element .virtualTour {
+    font-size: 18px;
+  }
+}

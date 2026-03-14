@@ -1,0 +1,543 @@
+@font-face {
+  font-family: "Forum";
+  src: url("./fonts/Forum-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+input::placeholder {
+  color: #030303;
+  padding-left: 45px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+input {
+  border: 1px solid #030303;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 91px;
+  padding-bottom: 91px;
+  max-width: 970px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 51px;
+}
+
+.booking-info input {
+  height: 45px;
+}
+
+.booking-info select {
+  height: 45px;
+  border: 1px solid #030303;
+}
+
+.close {
+  width: fit-content;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: transform 0.3s;
+}
+
+.close:hover {
+  transform: scale(98%);
+}
+
+.close:active {
+  transform: scale(102%);
+}
+
+.close img {
+  width: 25px;
+  height: 25px;
+}
+
+.booking-info {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-info {
+  width: 100%;
+  max-width: 530px;
+}
+
+.header {
+  padding-bottom: 60px;
+}
+
+.header h2 {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #9d8665;
+  padding-bottom: 15px;
+}
+
+.header p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #710707;
+  padding-bottom: 10px;
+}
+
+.header hr {
+  background-color: #710707;
+  height: 3px;
+  width: 100%;
+}
+
+.info-inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.dateTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateTime input {
+  width: 190px;
+}
+
+.entry {
+  border: 1px solid #030303;
+}
+
+.entry h2 {
+  color: #9d8665;
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+
+.entry hr {
+  height: 2px;
+  background-color: #710707;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.bnt-controlls {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+.ticketsqnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticketsqnt p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.subborder {
+  padding: 10px 15px 15px 15px;
+}
+
+.custom-number-input {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  width: 105px;
+  height: 25px;
+  border: 1px solid grey;
+}
+
+.custom-input {
+  border: none;
+  width: 35px;
+  background-color: white;
+  font-family: "Roboto";
+  text-align: end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.custom-btn {
+  text-align: center;
+  width: 35px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  transition: color 0.4s, background-color 0.4s, transform 0.4s;
+}
+
+.custom-btn:hover {
+  color: black;
+  background-color: #9d8665;
+  transform: scale(96%);
+}
+
+.custom-btn:active {
+  color: black;
+  background-color: #9d8665;
+  transform: scale(104%);
+}
+
+/* card info styles */
+
+.card-info {
+  border: 1px solid #030303;
+  padding: 25px 30px 26px 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.infoOfVisit {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.red {
+  color: #740c11;
+  padding-bottom: 10px;
+}
+
+.pad22 {
+  padding-bottom: 5px;
+}
+.pd15 {
+  padding-right: 15px;
+}
+
+.overview {
+  padding-bottom: 22px;
+}
+
+.totalPrice {
+  padding-bottom: 10px;
+}
+
+.totalPrice p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding-bottom: 5px;
+}
+
+p .ticketNum {
+  display: inline-block;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: 1px solid #030303;
+  width: 32px;
+  height: 20px;
+  border-radius: 25%;
+  color: #a4a4a3;
+  background-color: #030303;
+}
+
+p .price {
+  display: inline-block;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.totalPriceSpan {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.totalPrice hr {
+  height: 2px;
+  color: #740c11;
+  margin-top: 9px;
+  background-color: #740c11;
+  margin-bottom: 10px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+}
+
+.card {
+  width: 100%;
+  max-width: 470px;
+  height: 241px;
+  position: relative;
+}
+
+.cardNum {
+  position: relative;
+  width: 360px;
+  background-color: #bcbcbc;
+  height: 211px;
+  z-index: 2;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 15px 20px 15px 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.cdNum {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.cdNum input {
+  max-width: 215px;
+}
+
+.cdName {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.cdName {
+  max-width: 320px;
+}
+
+.expDate {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 15px;
+}
+
+.expDate p {
+  width: 100%;
+}
+
+.expDate input {
+  width: 100px;
+}
+
+.cardNum input {
+  border: none;
+  height: 35px;
+}
+
+.cardCVC {
+  z-index: 1;
+  width: 360px;
+  background-color: #a4a4a3;
+  height: 211px;
+  position: absolute;
+  top: 30px;
+  left: 110px;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.card-details button {
+  align-self: flex-end;
+  width: 220px;
+  height: 45px;
+  background-color: #710707;
+  color: white;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: none;
+  transition: background-color 0.5s, transform 0.2s;
+}
+
+.card-details button:hover {
+  background-color: #9d8665;
+  transform: scale(104%);
+}
+
+.card-details button:active {
+  transform: scale(96%);
+}
+
+.cardTypes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  position: absolute;
+  top: 34px;
+  right: 20px;
+}
+
+.blackLine {
+  width: 100%;
+  height: 45px;
+  background-color: #030303;
+  position: absolute;
+  top: 25px;
+}
+
+.cvcTexts {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  justify-content: start;
+  z-index: 10;
+  margin-right: 20px;
+  margin-top: auto;
+}
+
+.cvcTexts input {
+  text-align: center;
+  width: 75px;
+  height: 35px;
+  border: none;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.cvcTexts p {
+  width: 55px;
+  text-align: left;
+  align-self: center;
+  padding-bottom: 15px;
+}
+
+.cvcTexts h2 {
+  font-size: 12px;
+}
+
+.inputName {
+  position: relative;
+}
+
+.inputName::before{
+  content: '';
+  background-image: url('./assetsForBuyPage/name.svg');
+  width: 13px;
+  height: 15px;
+  position: absolute;
+  z-index: 10;
+  top: 15px;
+  left: 15px;
+}
+
+
+.inputName input {
+  width: 100%;
+}
+
+.inputEmail {
+  position: relative;
+}
+
+.inputEmail::before{
+  content: '';
+  background-image: url('./assetsForBuyPage/email.svg');
+  width: 15px;
+  height: 11px;
+  position: absolute;
+  z-index: 10;
+  top: 15px;
+  left: 15px;
+}
+
+.inputEmail input {
+  width: 100%;
+
+}
+
+.inputTel {
+  position: relative;
+}
+
+.inputTel::before{
+  content: '';
+  background-image: url('./assetsForBuyPage/tel.svg');
+  width: 14px;
+  height: 23px;
+  position: absolute;
+  z-index: 10;
+  top: 11px;
+  left: 15px;
+}
+
+.inputTel input {
+  width: 100%;
+}

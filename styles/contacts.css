@@ -1,0 +1,144 @@
+.Contacts {
+  padding-top: 75px;
+}
+
+.Contacts hr {
+  margin-bottom: 75px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.contacts h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  padding-bottom: 50px;
+  max-width: 227px;
+}
+
+.contacts p {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 25px;
+}
+
+.contacts a {
+  color: #000000;
+}
+
+.telNumContact:hover {
+  text-decoration: underline;
+}
+
+.mailContact:hover {
+  text-decoration: underline;
+}
+
+.map {
+  max-width: 960px;
+}
+
+  iframe {
+    max-width: 100%;
+    width: 960px;
+    max-height: 100%;
+    height: 620px;
+  }
+
+@media screen and (max-width: 1024px) {
+  .Contacts {
+    padding-top: 60px;
+  }
+
+  .Contacts hr {
+    margin-bottom: 60px;
+  }
+
+  .contacts {
+    padding-bottom: 62px;
+  }
+  .contacts h2 {
+    font-size: 24px;
+    max-width: 185px;
+    padding-bottom: 35px;
+  }
+
+  .contacts p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .map {
+    max-width: 694px;
+    height: 454px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Contacts {
+    padding-top: 40px;
+  }
+
+  .Contacts hr {
+    margin-bottom: 40px;
+  }
+
+  .contacts {
+    padding-bottom: 67px;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .contacts h2 {
+    font-size: 20px;
+    max-width: 155px;
+    padding-bottom: 40px;
+  }
+
+  .contacts p {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+
+    .contacts p:nth-child(4) {
+    font-size: 18px;
+    padding-bottom: 0px;
+  }
+
+  .map {
+    align-self: center;
+    max-width: 728px;
+    height: 476px;
+  }
+
+}
+
+
+@media screen and (max-width: 420px) {
+ 
+  .contacts {
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
+  .contacts h2 {
+    font-size: 16px;
+    max-width: 124px;
+  }
+
+  .contacts p {
+    font-size: 16px;
+  }
+
+  .map {
+    align-self: center;
+    max-width: 380px;
+    height: 248px;
+  }
+}

@@ -1,0 +1,275 @@
+.Tickets {
+  padding-top: 75px;
+}
+
+.Tickets hr {
+  margin-bottom: 75px;
+}
+
+.ticket-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.imageBlock {
+  display: flex;
+  column-gap: 60px;
+}
+
+
+.imageBlock img {
+  max-width: 100%;
+}
+.radio-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 270px;
+}
+
+.radio-input h2 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 50px;
+}
+
+.amount-controll {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+}
+
+.amount-controll h2 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.amount-controll p {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.amount-controll h2 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 25px;
+}
+
+label {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 25px;
+}
+
+label span {
+  padding-left: 23px;
+}
+
+input[type="radio"] {
+  appearance: none; /* Убираем дефолтный стиль */
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: black; /* Цвет активной кнопки */
+}
+
+input[type="radio"]:checked {
+  border-color: black;
+}
+
+.ticketqnt-interface {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 150px;
+}
+
+.ticketqnt-interface p {
+  text-align: start;
+}
+
+.border {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  column-gap: 36.5px;
+  align-items: center;
+  border: 3px solid #000000;
+  width: 150px;
+  height: 50px;
+}
+
+.border button:hover {
+  transform: scale(96%);
+  background-color: transparent;
+}
+
+.border button:active {
+  transform: scale(105%);
+  background-color: transparent;
+}
+
+.totalCalculate {
+  padding-top: 40px;
+  padding-bottom: 60px ;
+  font-family: "Roboto" ;
+  font-weight: 700 !important;
+  font-size: 28px !important;
+  letter-spacing: 1.65px;
+}
+
+.buy-now {
+  width: 175px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  vertical-align: middle;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-now:hover {
+  background-color: #9d8665;
+  transform: scale(104%);
+}
+
+.buy-now:active {
+  transform: scale(98%);
+}
+
+.minus {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width:1024px) {
+  .Tickets {
+  padding-top: 60px;
+}
+.ticket-panel {
+  flex-wrap: nowrap;
+}
+  .radio-input {
+    display: none;
+  }
+  .imageBlock img {
+    width: 700px;
+    max-height: 440px;
+  }
+
+  .ticket-panel {
+    padding-bottom: 60px;
+  }
+
+  .ticketqnt-interface {
+    padding-bottom: 25px;
+  }
+
+  .totalCalculate {
+    padding-top: 0px;
+    padding-bottom: 69px;
+  }
+  .ticketqnt-interface p {
+    padding-bottom: 10px;
+  }
+  .border {
+    width: 175px;
+  }
+
+  .amount-controll {
+    text-align: start;
+  }
+  .Tickets hr {
+    margin-bottom: 60px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+    .imageBlock img {
+    width: 444px;
+    max-height: 340px;
+  }
+
+  .ticket-panel {
+    justify-content: center;
+    column-gap: 60px;
+  }
+} 
+
+
+
+@media screen and (max-width:500px) {
+    .Tickets {
+  padding-top: 40px;
+}
+
+  .Tickets hr {
+    margin-bottom: 40px;
+  }
+    .imageBlock img {
+    width: 380px;
+    height: 160px;
+  }
+
+  .ticket-panel {
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+  }
+
+  .amount-controll {
+    max-width: 175px;
+    text-align: center;
+  }
+
+  .ticket-panel {
+    padding-bottom: 40px;
+  }
+} 

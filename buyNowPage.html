@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="buyNowPage.css" />
+  </head>
+  <body>
+    <a href="./index.html#Tickets" class="close"
+      ><img src="./assetsForBuyPage/Close.svg" alt="" class="close"
+    /></a>
+    <main>
+      <div class="booking-info">
+        <!--  flex-column -->
+        <!-- flex column header -->
+        <div class="header">
+          <img src="./assetsForBuyPage/logo.svg" alt="logo" class="logo" />
+          <h2>Booking tickets</h2>
+          <p>Tour to Louvre</p>
+          <hr />
+        </div>
+        <!-- date time container -->
+        <div class="info-inputs">
+          <div class="dateTime">
+            <input type="date" />
+            <input type="time" />
+          </div>
+          <div class="inputName">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="inputEmail">
+            <input type="email" placeholder="E-mail"/>
+          </div>
+          <div class="inputTel">
+            <input type="tel" placeholder="Phone" />
+          </div>
+
+          <select>
+            <option value="" disabled selected hidden>Ticket Type</option>
+            <option value="perm">Permanent exhibition</option>
+            <option value="temp">Temporary exhibition</option>
+            <option value="comb">Combined Admission</option>
+          </select>
+          <div class="entry">
+            <div class="subborder">
+              <h2>Entry Ticket</h2>
+              <hr />
+              <div class="bnt-controlls">
+                <div class="ticketsqnt">
+                  <p>Basic 18+ <span class="priceYoung">(20 €)</span></p>
+                  <div class="custom-number-input">
+                    <button class="custom-btn minus-btn">-</button>
+                    <input
+                      type="number"
+                      class="custom-input"
+                      value="0"
+                      min="0"
+                      max="100"
+                    />
+                    <button class="custom-btn plus-btn">+</button>
+                  </div>
+                </div>
+                <div class="ticketsqnt">
+                  <p>Senior 65+ <span class="priceSenior">(10 €)</span></p>
+                  <div class="custom-number-input">
+                    <button class="custom-btn minus-btn">-</button>
+                    <input
+                      type="number"
+                      class="custom-input"
+                      value="0"
+                      min="0"
+                      max="100"
+                    />
+                    <button class="custom-btn plus-btn">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- another flex container -->
+      </div>
+      <div class="card-info">
+        <div class="infoOfVisit">
+          <div class="overview">
+            <h2>Overview</h2>
+            <p class="red">Tour to Louvre</p>
+            <p class="pad22">
+              <span
+                ><img
+                  class="pd15"
+                  src="./assetsForBuyPage/date.svg"
+                  alt="date" /></span
+              >Friday, August 19
+            </p>
+            <p class="pad22">
+              <span
+                ><img
+                  class="pd15"
+                  src="./assetsForBuyPage/time.svg"
+                  alt="time" /></span
+              >16 : 30
+            </p>
+            <p class="pad">
+              <span
+                ><img
+                  src="./assetsForBuyPage/temporaryExibition.svg"
+                  alt="temporarily"
+                  class="pd15" /></span
+              >Temporary exhibition
+            </p>
+          </div>
+          <img src="./assetsForBuyPage/museum.png" alt="" />
+        </div>
+        <div class="totalPrice">
+          <p>
+            <span class="ticketNum">2</span>Basic (20 €)
+            <span class="price">40 €</span>
+          </p>
+          <p>
+            <span class="ticketNum">2</span>Basic (20 €)
+            <span class="price">20 €</span>
+          </p>
+          <hr />
+          <p class="total">Total: <span class="totalPriceSpan">60 €</span></p>
+        </div>
+        <div class="card-details">
+          <div class="card">
+            <div class="cardNum">
+              <div class="cardTypes">
+                <img src="./assetsForBuyPage/Visa.svg" alt="visa" />
+                <img src="./assetsForBuyPage/Mastercard.svg" alt="Mastercard" />
+              </div>
+              <div class="cdNum">
+                <p>Card number</p>
+                <p>
+                  <input type="number" id="cardumlb" />
+                </p>
+              </div>
+
+              <div class="expDate">
+                <p>Expiration date</p>
+                <input type="number" />
+                <input type="number" />
+              </div>
+              <div class="cdName">
+                <label for="cardname">Cardholder name</label>
+                <input type="text" id="cardname" />
+              </div>
+            </div>
+            <div class="cardCVC">
+              <div class="cvcTexts">
+                <h2>CVC/CVV</h2>
+                <input
+                  type="number"
+                  min="100"
+                  max="999"
+                />
+                <p>The last 3 or 4 digits on back of the card</p>
+              </div>
+              <div class="blackLine"></div>
+            </div>
+          </div>
+          <button>Book</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

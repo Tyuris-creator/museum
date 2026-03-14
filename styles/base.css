@@ -1,0 +1,70 @@
+:root {
+  --main-black: #030303;
+  --main-white: #ffffff;
+  --main-red: #710707;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Forum-Regular";
+  src: url("../fonts/Forum-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+.container {
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container h2, p {
+  cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1014px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 758px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .container {
+    max-width: 410px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Footer .container {
+    max-width: 984px !important;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .Footer .container {
+    max-width: 758px !important;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .Footer .container {
+    max-width: 410px !important;
+  }
+}

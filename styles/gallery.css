@@ -1,0 +1,89 @@
+.Gallery {
+  background-color: black;
+  padding-top: 75px;
+}
+
+.gallery {
+  padding-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 36px;
+  height: 100%;
+  max-height: 1960px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.coverage {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  max-height: 360px;
+  bottom: 0;
+}
+
+.picture-block1,
+.picture-block3 {
+  padding-top: 50px;
+}
+
+.picture-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  height: 100%;
+}
+
+.align-up {
+  transform: translateY(-60%);
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0%);
+  will-change: transform, opacity;
+}
+
+@media screen and (max-width:1024px) {
+  .Gallery {
+    padding-top: 60px;  
+  }
+  .gallery{
+    padding-top: 60px;
+    max-height: 1265px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .Gallery {
+    padding-top: 40px;  
+  }
+  .gallery{
+    padding-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow:dense;
+    max-height: 1080px;
+  }
+  .picture-block1, .picture-block3 {
+    padding-top: 25px;
+  }
+}
+
+
+@media screen and (max-width:420px) {
+
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow:row;
+    max-height: 637px;
+  }
+}
